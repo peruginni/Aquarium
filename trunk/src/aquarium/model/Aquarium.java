@@ -70,6 +70,8 @@ public class Aquarium
             float movedy = activeCell.getLocation().y +
                            velocity.y;
 
+            // wall detection inspired by http://leepoint.net/notes-java/examples/animation/40BouncingBall/bouncingball.html
+            
             if (movedx - radius < 0) {
                 movedx = radius;
                 velocity.x = -velocity.x;
